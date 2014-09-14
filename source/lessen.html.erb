@@ -1,0 +1,12 @@
+---
+title: Lessen
+description: Bekijk hier alle informatie over onze lessen
+directory_index: true
+---
+<h1>Lessen</h1>
+
+<% sub_pages('lessen').sort_by {|p| p.path}.each do |resource| %>
+  <h2><%= resource.data.title %></h2>
+  <%= resource.render :layout => false %>
+  <span class="article_seperator">&nbsp;</span>
+<% end %>

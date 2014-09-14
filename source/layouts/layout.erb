@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <%= stylesheet_link_tag 'site' %>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= (current_page.data.title ? "#{current_page.data.title} - " : '') + "EHBO HULST - Sint Christoffel" %></title>
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+
+<!-- <center all> -->
+<div class="center_all">
+
+    <div class="corner_banner">
+        <a target="_blank" href="http://www.reanimatiepartner.nl" title="Link naar Reanimatie partner">
+            <img border="0" src="<%= '/images/corner_banner.png' %>" alt="Link naar Reanimatie partner">
+        </a>
+    </div>
+
+    <!-- <layout> -->
+    <div class="layout">
+
+        <a href="/" class="logo" title="Terug naar home"></a>
+
+        <div class="header">
+            <div class="text">
+                <%= partial 'partials/header' %>
+            </div>
+        </div>
+
+        <!-- <topmenu here> -->
+        <div class="topmenu">
+            <%= partial 'partials/menu' %>
+        </div>
+        <!-- </topmenu here> -->
+
+        <div class="content_shell">
+            <!-- <main content> -->
+                <div class="<%= content_for?(:content_right) ? "content_small" : "content" %>">
+                    <%= yield %>
+                </div>
+                <!-- </main content> -->
+
+                <!-- <news flash> -->
+                <% if content_for?(:content_right) %>
+                    <div class="news">
+                        <%= yield_content :content_right %>
+                    </div>
+                <% end %>
+                <!-- </news flash> -->
+            </div>
+
+            <div class="footer">
+                <%= partial 'partials/footer' %>
+            </div>
+
+        </div>
+        <!-- </layout> -->
+
+        <div class="bottom">
+            <!-- COMMENT LATEN STAAN SVP, BUG IN IE 6 -->
+            <!-- COMMENT LATEN STAAN SVP, BUG IN IE 6 -->
+            <!-- COMMENT LATEN STAAN SVP, BUG IN IE 6 -->
+        </div>
+    </div>
+    <!-- </center all> -->
+
+    <%= javascript_include_tag 'site' %>
+    </body>
+</html>

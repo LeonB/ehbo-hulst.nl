@@ -1,0 +1,451 @@
+/* CSS Joomla Template version 1.0 - Tim-online.nl  */
+
+/*<standard HTML tags>*/
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-image:url(../images/bg.png);
+    background-position:50px 0px;
+    color: #3E4443;
+    line-height: 18px;
+}
+body td {
+    text-align: left;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+a, a:link {
+    text-decoration: underline;
+    color: #50728D;
+    font-weight: normal;
+}
+a:hover {
+    color: #50728D;
+    color: #FF0000;
+    text-decoration: none;
+}
+/* Volgens Firefox specificaties */
+ul, li {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+ul {
+    padding-top: 1px;
+    margin-bottom: 11px;
+}
+/* Tot hier */
+p {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+/*</standard HTML tags>*/
+
+
+/*<layout>*/
+
+.center_all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 778px;
+    text-align: center;
+    position: relative;
+}
+
+.corner_banner {
+
+}
+
+.corner_banner a {
+    display: block;
+    position: absolute;
+    right:4px;
+    top:0px;
+    clear: both;
+}
+
+.corner_banner a img {
+    behavior: url(iepngfix.htc);
+}
+
+
+.layout {
+    width: 764px;
+    display: block;
+    float: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-image:url(../images/layout_bg.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+}
+.logo {
+    height: 88px;
+    display: block;
+    float: left;
+    width: 764px;
+    background-image:url(../images/ehbohulst_logo.png);
+    /*background-image:url(../images/tcc_logo.jpg);*/
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.header {
+    background-image:url(../images/header_bg.jpg);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-color: #900000;
+    border-top: 2px solid #FF9171;
+    border-bottom: 6px solid #FF9171;
+    float: left;
+    display: block;
+    width: 764px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+.header .text {
+    color: #ffffff;
+    width: 660px;
+    display: block;
+    padding-left: 45px;
+    background-image:url(../images/doc_icon.gif);
+    background-position: 22px 1px;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.header .text p {
+    display: block;
+    width: 560px;
+    float: left;
+}
+
+.header .text .facebook {
+    float: right;
+}
+
+.left {
+    float: left;
+    width: 213px;
+    display: block;
+}
+.right {
+    float: left;
+    width: 544px;
+    display: block;
+}
+.content_shell {
+    float: left;
+    display: block;
+    width: 764px;
+}
+.content_shell .content {
+    float: left;
+    display: block;
+    width: 736px;
+    padding-right: 10px;
+    padding-left: 18px;
+    padding-top: 28px;
+}
+.content_shell .content h5 {
+    color: #ffffff;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 6px;
+}
+.content_shell .content h5 .text {
+    background-color: #39403F;
+    padding: 3px;
+    padding-left: 0px;
+}
+.content_shell img {
+    max-width: 100%;
+}
+.content_small {
+    float: left;
+    display: block;
+    width: 522px;
+    padding-right: 10px;
+    padding-left: 18px;
+    padding-top: 28px;
+}
+.news {
+    float: left;
+    display: block;
+    width: 214px;
+    padding-top: 17px;
+}
+.news .moduletable h3 {
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    margin: 0px;
+    padding: 0px;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 9px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    width: 205px;
+    border-top: 2px solid #0085B9;
+    background-color: #02758F;
+}
+.news ul {
+    list-style: outside;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.news li {
+    background-color: #0085B9;
+    padding: 0px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-right: 10px;
+    margin: 0px;
+    float: left;
+    width: 195px;
+    background-image:url(../images/news_bg.jpg);
+    background-position:  top center;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    text-align: left;
+}
+.news li a, .news li a:link {
+    text-decoration: underline;
+    color: #FFB062;
+    font-weight: normal;
+}
+.news li a:hover {
+    color: #FFB062;
+    text-decoration: none;
+}
+/*</layout>*/
+
+/*<main menu>*/
+.topmenu {
+    text-align: left;
+    float: left;
+    width: 764px;
+    background-color: #000000;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    border-bottom: 2px solid #424343;
+}
+.topmenu ul {
+    list-style: outside;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.topmenu li {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.topmenu a.mainlevel {
+    line-height: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    display: block;
+    color: #ffffff;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.topmenu a.mainlevel:hover {
+    color: #F0A051;
+    color: #FF0000;
+    text-decoration: none;
+}
+.topmenu #mainlevel li a#active_menu {
+    color: #ffffff;
+    color: #ff0000;
+    text-decoration: none;
+    background-color: #151515;
+}
+.topmenu #mainlevel li a#active_menu:hover {
+    color: #F0A051;
+    color: #FF0000;
+    text-decoration: none;
+    background-color: #151515;
+}
+/*</main menu>*/
+
+/*<left colomn>*/
+.readon {
+    float: right;
+    margin: 0px;
+    margin-top: 5px;
+}
+a.readon, a.readon:link {
+    text-decoration:none;
+    background-image:url(../images/orange_arrow.gif);
+    background-position:left center;
+    background-repeat:no-repeat;
+    padding: 1px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+a.readon:hover {
+    color: #75BF75;
+    text-decoration:none;
+}
+.moduletable {
+    padding: 0px;
+}
+h3, .moduletable h3, .componentheading, .contentheading, h4, h1 {
+    color: #F09C48;
+    color: #FF0000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+/*</left colomn>*/
+
+/*<content>*/
+.contentpane {
+    text-align: left;
+}
+.contentpaneopen {
+    text-align: left;
+    padding: 0px;
+    width: 700px;
+}
+.content {
+    text-align: left;
+    padding: 0px;
+}
+.mosimage_caption {
+    color: #F09C48;
+    font-size: x-small;
+    font-style:italic;
+}
+/*</content>*/
+
+/*<footer>*/
+.footer {
+    margin-top: 30px;
+    background-image:url(../images/footer_bg.jpg);
+    background-position:top center;
+    background-repeat:repeat-x;
+    float: left;
+    display: block;
+    width: 764px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.footer td {
+    text-align: center;
+}
+.footer td table {
+    width: 100%;
+}
+.bottom {
+    width: 778px;
+    display: block;
+    float: left;
+    background-image:url(../images/bottom_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+/*<footer>*/
+
+/*<form elements>*/
+form {
+    padding: 0px;
+    margin: 0px
+}
+input, select {
+    border: 1px solid #000;
+    font-size: 11px;
+    padding: 2px 0px 2px 2px;
+}
+textarea {
+    border: 1px solid #000;
+    font-size: small;
+    padding: 2px 0px 2px 2px;
+}
+#searchphraseany, #searchphraseall, #searchphraseexact {
+    background-image:none;
+    border: 0px;
+}
+.button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    background-color: #900000;
+}
+/*</form elements>*/
+
+/*<smoelenboek>*/
+.zoekform {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.personeelsleden img {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	border:3px solid #d9d9d9;
+}
+
+.personeelsleden table {
+	display: block;
+	float: left;
+}
+
+.personeelslid {
+	display: block;
+	width: 730px;
+	height: 210px;
+}
+
+.personeelslid .th {
+	font-weight: bold;
+	width: 130px;
+}
+/*</smoelenboek>*/
+
+.personeelslid {
+	border-top: 1px solid #d9d9d9;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+
+.smoelenboek .pagenav {
+	margin-bottom: 10px;
+}
+
+/* end of file */
+

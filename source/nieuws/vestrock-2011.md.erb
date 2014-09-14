@@ -1,0 +1,16 @@
+---
+title: Vestrock 2011
+description:
+date: 2011-05-30 20:19:08
+---
+<div class="sig">
+  <% images('images/stories/fotos/vestrock_2').each do |r| %>
+    <div class="sig_cont">
+      <div class="sig_thumb">
+        <a href="<%= url_for(r.url) %>">
+          <%= image_tag(r.url, resize_to: '200x200', class: 'thumbnail') %>
+        </a>
+      </div>
+    </div>
+  <% end %>
+</div>

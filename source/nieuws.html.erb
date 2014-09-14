@@ -1,0 +1,12 @@
+---
+title: Nieuws
+description: Bekijk hier al het nieuws over &amp; van EHBO Hulst
+directory_index: true
+---
+<h1>Nieuws</h1>
+
+<% sub_pages('nieuws').sort_by {|p| p.data.date}.reverse.each do |resource| %>
+  <h2 class="contentheading"><%= resource.data.title %></h2>
+  <%= resource.render :layout => false %>
+  <span class="article_seperator">&nbsp;</span>
+<% end %>

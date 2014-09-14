@@ -1,0 +1,18 @@
+---
+title: Foto's
+description: Bekijk hier al onze foto's
+directory_index: true
+---
+<h1>Foto's</h1>
+
+<div class="sig">
+  <% images('images/stories/fotos').each do |r| %>
+    <div class="sig_cont">
+      <div class="sig_thumb">
+        <a href="<%= url_for(r.url) %>">
+          <%= image_tag(r.url, resize_to: '200x200', class: 'thumbnail') %>
+        </a>
+      </div>
+    </div>
+  <% end %>
+</div>

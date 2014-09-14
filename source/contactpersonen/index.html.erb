@@ -1,0 +1,47 @@
+---
+title: Contactpersonen
+description: What I've written about in the past
+---
+<h1>Contactpersonen</h1>
+<div class="personeelsleden">
+<% data.contactpersonen.each do |key, c| %>
+    <div class="personeelslid row_1">
+        <%= image_tag("/images/contactpersonen/#{key}.jpg", resize_to: '100x100', alt: c.voornaam) %>
+        <table>
+            <tbody><tr>
+                <td class="th">Voornaam:</td>
+                <td><%= c.voornaam %></td>
+            </tr>
+            <tr>
+                <td class="th">Achternaam:</td>
+                <td><%= c.achternaam %></td>
+            </tr>
+            <tr>
+                <td class="th">Functie:</td>
+                <td><%= c.functie %></td>
+            </tr>
+            <tr>
+                <td class="th">Adres:</td>
+                <td><%= c.adres %></td>
+            </tr>
+            <tr>
+                <td class="th">Postcode:</td>
+                <td><%= c.postcode %></td>
+            </tr>
+            <tr>
+                <td class="th">Woonplaats:</td>
+                <td><%= c.woonplaats %></td>
+            </tr>
+            <tr>
+                <td class="th">Telefoonnummer:</td>
+                <td><%= c.telefoonnummer %></td>
+            </tr>
+            <tr>
+                <td class="th">E-mailadres:</td>
+                <td><%= mail_to c.email %></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<% end %>
+</div>
