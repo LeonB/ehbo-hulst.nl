@@ -1,0 +1,29 @@
+---
+- naam: Opleidingscursus EHBO
+  start: 8 januari 2015
+  examen: 9 of 16 april 2015
+  kosten: 170.00
+  lesdata:
+    - januari 8-15-22-29
+    - februari 5-12-19-26
+    - maart 5-12-17-25
+    - april 2-9-16
+  opmerkingen:
+
+- naam: Opleidingscursus EHBO aan Kinderen
+  start: 2 oktober 2014
+  examen: 13 of 19 november
+  kosten: 65.00
+  lesdata:
+    - oktober 2-9-16-30
+    - november 6-13-19
+  opmerkingen:
+
+- naam: Opleidingscursus Reanimatie en AED bediener
+  start: 19 november 2014 
+  examen:
+  kosten: 50.00
+  lesdata:
+    - november 19-27
+    - december 4
+  opmerkingen: Bij voldoende kandidaten nog een cursus in het voorjaar.

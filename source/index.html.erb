@@ -1,0 +1,18 @@
+---
+---
+
+<h1>Welkom op de website van EHBO Hulst</h1>
+
+<div class="contentpaneopen">
+    <% resource = sitemap.find_resource_by_path('lessen/info-avond-25-september-2014.html') %>
+    <h2><%= resource.data.title %></h2>
+    <%= resource.render :layout => false  %>
+</div>
+
+<hr />
+
+<img src="/images/stories/groepsfoto.jpg" alt="EHBO Hulst Groepsfoto">
+
+<% content_for :content_right do %>
+  <%= partial 'partials/facebook_posts' %>
+<% end %>

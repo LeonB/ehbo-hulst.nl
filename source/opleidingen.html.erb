@@ -1,0 +1,45 @@
+---
+title: Opleidingen
+description:
+---
+<h1>Opleidingen</h1>
+
+<div class="opleidingen">
+<% data.opleidingen.each do |o| %>
+    <div class="opleiding">
+      <h2><%= o.naam %></h2>
+        <table>
+            <tbody>
+            <tr>
+                <td class="th">Startdatum:</td>
+                <td><%= o.start %></td>
+            </tr>
+            <tr>
+                <td class="th">Examendatum:</td>
+                <td><%= o.examen %></td>
+            </tr>
+            <tr>
+                <td class="th">Kosten</td>
+                <td><%= number_to_currency(o.kosten) %></td>
+            </tr>
+            <tr>
+                <td class="th">Lesdata</td>
+                <td>
+                    <ul>
+                    <% o.lesdata.each do |datum| %>
+                        <li><%= datum %></li>
+                    <% end %>
+                   </ul>
+                </td>
+            </tr>
+            <% if o.opmerkingen %>
+            <tr>
+                <td class="th">Opmerkingen</td>
+                <td><%= o.opmerkingen %></td>
+            </tr>
+            <% end %>
+            </tbody>
+        </table>
+    </div>
+<% end %>
+</div>

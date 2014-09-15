@@ -1,0 +1,13 @@
+---
+title: Informatie
+description: Algemene informatie over EHBO Hulst
+directory_index: true
+---
+<h1>Informatie</h1>
+
+<% sub_pages('info').sort_by {|p| p.path}.each do |resource| %>
+  <h2><%= resource.data.title %></h2>
+  <%= resource.render :layout => false %>
+  <span class="article_seperator">&nbsp;</span>
+<% end %>
+

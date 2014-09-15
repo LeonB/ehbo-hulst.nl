@@ -18,6 +18,19 @@ figure {
     margin: 0;
     padding: 0;
 }
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #b9a4a3;
+  border-style: solid none none none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
 a, a:link {
     text-decoration: underline;
     color: #50728D;
@@ -341,6 +354,14 @@ h3, .moduletable h3, .componentheading, .contentheading, h4, h1 {
     font-size: x-small;
     font-style:italic;
 }
+
+.content td {
+    padding-right: 20px;
+}
+
+.content table ul {
+    margin-left: 0;
+}
 /*</content>*/
 
 /*<footer>*/
@@ -407,45 +428,4 @@ textarea {
 }
 /*</form elements>*/
 
-/*<smoelenboek>*/
-.zoekform {
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-
-.personeelsleden img {
-	display: block;
-	float: left;
-	margin-right: 10px;
-	border:3px solid #d9d9d9;
-}
-
-.personeelsleden table {
-	display: block;
-	float: left;
-}
-
-.personeelslid {
-	display: block;
-	width: 730px;
-	height: 210px;
-}
-
-.personeelslid .th {
-	font-weight: bold;
-	width: 130px;
-}
-/*</smoelenboek>*/
-
-.personeelslid {
-	border-top: 1px solid #d9d9d9;
-	padding-top: 10px;
-	margin-bottom: 0px;
-}
-
-.smoelenboek .pagenav {
-	margin-bottom: 10px;
-}
-
 /* end of file */
-

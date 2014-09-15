@@ -11,6 +11,9 @@
 # Sprockets
 ###
 
+# Set default locale to :nl
+activate :i18n, :mount_at_root => :nl
+
 sprockets.append_path File.join root, 'vendor'
 
 ###
@@ -61,6 +64,9 @@ set :images_dir, 'images'
 
 # Uses .env in the root of the project
 activate :dotenv
+
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+set :markdown_engine, :redcarpet
 
 # Build-specific configuration
 configure :build do
@@ -133,7 +139,9 @@ helpers do
   def sub_pages(dir)
     dir = Pathname.new(dir).cleanpath.to_s
     sitemap.resources.select do |resource|
-      resource.path.start_with?(dir + '/')
+      next if not resource.path.start_with?(dir + '/')
+      next if resource.data.published == false
+      true
     end
   end
 
