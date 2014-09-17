@@ -34,3 +34,6 @@ gem 'middleman-dotenv', '~> 1.0'
 
 # Small images are small! Compress yours during middleman build.
 gem "middleman-imageoptim"
+
+# The safe Markdown parser, reloaded.
+gem "redcarpet"
