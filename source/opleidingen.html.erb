@@ -14,10 +14,13 @@ description:
                 <td class="th">Startdatum:</td>
                 <td><%= o.start %></td>
             </tr>
+            <% if o.examen %>
             <tr>
                 <td class="th">Examendatum:</td>
                 <td><%= o.examen %></td>
             </tr>
+            </tr>
+            <% end %>
             <tr>
                 <td class="th">Kosten</td>
                 <td><%= number_to_currency(o.kosten) %></td>
