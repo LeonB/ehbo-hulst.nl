@@ -36,4 +36,4 @@ gem 'middleman-dotenv', '~> 1.0'
 gem "middleman-imageoptim"
 
 # The safe Markdown parser, reloaded.
-gem "redcarpet"
+# gem "redcarpet"

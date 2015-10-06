@@ -20,10 +20,10 @@ sprockets.append_path File.join root, 'vendor'
 # Page options, layouts, aliases and proxies
 ###
 
-ignore "/contactpersonen/*"
-ignore "/info/*"
-ignore "/lessen/*"
-ignore "/nieuws/*"
+# ignore "/contactpersonen/*"
+# ignore "/info/*"
+# ignore "/lessen/*"
+# ignore "/nieuws/*"
 
 # Per-page layout changes:
 #
